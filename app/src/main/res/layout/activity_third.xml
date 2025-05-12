@@ -5,22 +5,29 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#8f00"
-    tools:context=".SecondActivity">
+    tools:context=".ThirdActivity">
 
     <Button
-        android:id="@+id/button_open_third"
+        android:id="@+id/button_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Open third "
+        android:text="Back to main"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="2nd activity"
+        android:text="3rd activity"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_open_third" />
+        app:layout_constraintTop_toBottomOf="@+id/button_back" />
+
+    <Button
+        android:id="@+id/button_open_other_third"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open other third"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
